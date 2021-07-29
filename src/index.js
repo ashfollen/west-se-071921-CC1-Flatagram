@@ -57,6 +57,8 @@ function addComment(e) {
 Known issue: form is submitting multiple entries, one for every character length in the form submission. Most likely because the event listener is running for every keystroke. 
 
 Last minute troubleshooting attempts was to create an array of all the entries and only submit the last in the array, didn't work. Should have just fixed the original inputForm.addEventListener('input'). 
+
+I bet a bit more abstraction would have helped. I shouldn't have had my comment activity in the original renderPost function. Breaking it out more would have eliminated my issue, I believe. 
 */
 
 
